@@ -28,7 +28,6 @@ exports.handler = function (event, context, callback) {
 var handlers = {
   'LaunchRequest': function () {
     console.log('launched backlog');
-    this.emit(':tell', 'You can add stories by saying add');
   },
 
   'Add': function () {
@@ -47,17 +46,8 @@ var handlers = {
     }
     console.log('normalized story: ' + story);
     if (!story) {
-      var slotToElicit = 'Story';
-      var speechOutput = 'What story would you like to add?';
-      var repromptSpeech = speechOutput;
-      var updatedIntent = this.event.request.intent;
-      console.log("attempting to elicit story");
-      try {
-        this.emit(':elicitSlot', slotToElicit, speechOutput, repromptSpeech, updatedIntent);
-        console.log('elicit slot worked');
-      } catch (err) {
-        console.log("error elicit slot " + err);
-      }
+      console.log('no story so give help');
+      this.emit(':tell', 'I need a story.  Try saying ask backlog to add as a user I want to do something so that I can get something');
 
     } else {
       console.log('attempting to tell story');
