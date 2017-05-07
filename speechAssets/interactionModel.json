@@ -1,0 +1,13 @@
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "Story",
+          "type": "AMAZON_LITERAL"
+        }
+      ],
+      "intent": "Add"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+Add {Some zip codes for NY market failed to be able to schedule measure job|Story}
+Add {Sanitize production data dump|Story}
+Add {HIA and Customer Approval Pdf links are displayed in the Vendor Web But not on Customer web for Remakes|Story}
+Add {Address in install appt reminder has duplicate line|Story}
+Add {Calculate correct cost and retail in all markets for install |Story}
+Add {We are not calculating correct price for addition windows.|Story}
+Add {We are not calculating correct Costs for additional windows and additional specs that has extra cost associated.|Story}
+Add {NY Launch|Story}
+Add {POC Firebase|Story}
+Add {My Window Treatments Info Gets Associated to the Wrong Person|Story}
+Add {Tablet M I Add to Cart is going to wrong cart|Story}
+Add {t.blinds.homedepot.com PIP doesn't include MI call out|Story}
+Add {Fix Duplicate Home Issue|Story}
+Add {Realign Existing Accounts|Story}
+Add {Require My Account Login to Schedule Install|Story}
+Add {M  I Landing Page|Story}
+Add {Marin Tracking Pixel |Story}
+Add {Motorized Spec Removal|Story}
+Add {Revise Specialty Shapes UI  App  |Story}
+Add {Show installers what install specs were purchased|Story}
+Add {MI PIP|Story}
+Add {PLP Redesign|Story}
+Add {Allow internal user to correct specs|Story}
+Add {Include list of additional install charges in order details|Story}
+Add {Order summary for install jobs before pushing to cart|Story}
+Add {Add original DC to order details screen|Story}
+Add {Install and deployment of mobile app|Story}
+Add {Track product only sales|Story}
+Add {Duplicate property name for different address|Story}
+Add {Above this line is prioritzed|Story}
+Add {Rugs PLP|Story}
+Add {Rugs Landing page|Story}
+Add {Link to cancel install|Story}
+Add {Revise calendar during the weekend|Story}
+Add {Default options not selected|Story}
+Add {Investigate way to measure how much data app is using |Story}
+Add {Vendor can vary business hours by day|Story}
+Add {Turn hotjar off in lower lifecycles|Story}
+Add {App user sync log|Story}
+Add {Enable search via OMSID on M I PLPs|Story}
+Add {Profile Experience|Story}
+Add {Assign Jobs|Story}
+Add {Test and target on PIP|Story}
+Add {Revise vendor admin email notification to include customer name and W  number|Story}
+Add {Figure out Omniture and tracking whole pipeline|Story}
+Add {Allow customers to get lost password|Story}
+Add {Use home services single- field address entry|Story}
+Add {Cookies too large to enter M I|Story}
+Add {Move to THD production for texting interface|Story}
+Add {Installer can take and view one or more photos during a job|Story}
+Add {During sync qued pictures get uploaded|Story}
+Add {Installer can view all images for a window on the window details page|Story}
+Add {Registered user can not re- login if he just registered  and do nothing   and reopened the browser|Story}
+Add {Installer can take image when flagging a window|Story}
+Add {Installer can view and delete full sized images taken during current job|Story}
+Add {During an install or remake  installer can view previous images of current window|Story}
+Add {Install vendor can view full size images in vendor admin|Story}
+Add {Prioritized|Story}
+Add {End to end testing in Prod|Story}
+Add {Make sure promote to production and promote to beta of mobile app fail in team city if deployment fails for any reason|Story}
+Add {Create escalation tree for critical issues  THD and GCC resources  |Story}
+Add {Customer as an entity|Story}
+Add {Tool for CEC to fix measurements submitted by installer  supervisor only    |Story}
+Add {Timestamp shopping.customer when it is created  or show me where to get time stamp for creation  |Story}
+Add {Unclear responsibilities for cloning Windows|Story}
+Add {Convert to Elastic Search|Story}
+Add {First time login is missing customer name or email in header area|Story}
+Add {Customer can view photos in My Window Treatments|Story}
+Add {Hide displayed zero when less than one inch of depth|Story}
+Add {Installer can notate images|Story}
+Add {Allow CEC to cart directly from estimate mode for DIY customer|Story}
+Add {Simplified version of the estimate tool   Basic Estimator|Story}
+Add {Presell products with Measure|Story}
+Add {Tutorial Java script walk through for estimate tool|Story}
+Add {Stock blinds can be sold with M I|Story}
+Add {Better M I experience entry from configurator|Story}
+Add {THD customer measure app with integration to MWT|Story}
+Add {Tshirt sizing for W and H|Story}
+Add {Properly market the whole home measure for one price to customer|Story}
+Add {Customer can opt into M I experience from THD cart even if they have already carted products.|Story}
+Add {Automatically send samples to customers that select product ahead of time|Story}
+Add {Ability for installer to take more than one type of measurement for a window|Story}
+Add {Calculate tax properly in states where installed blinds are taxed differently|Story}
+Add {My account implementation has to align with new approach in DotCom|Story}
+Add {API for sending in schedule feed from service provider|Story}
+Add {Data Feed for Geo- targeting|Story}
+Add {Mobile Application Auto- Update Process|Story}
+Add {Auto - Sync Mobile Database and Use Data Plan Efficiently|Story}
+Add {ChubHub cannot require OMSID since it is not available.Look up via config guid.|Story}
+Add {Single URL and configuration with all settings loaded from central database|Story}
+Add {API to let vendor change their business hours for a day|Story}
+Add {Store Associate Signs On Blinds.com with Home Depot LDAP  AD Integration  |Story}
+Add {Handle Carting Quantities Greater Than One|Story}
+Add {Push EDW Concerns to the Autobahn ODS|Story}
+Add {Fulfillment changes for ICON integration|Story}
+Add {Workflow changes in ICON includes ICON- X and Install to Go  |Story}
+Add {Add to cart changes for Service as a SKU|Story}
+Add {Landing page for M I sku retargeting ads|Story}
+Add {Add side mount toggle to app|Story}
+Add {Texting with a short code |Story}
+Add {Vendor web should not show HIA PDF download link in remake job details|Story}
+Add {Update synch success screen in app|Story}
+Add {Add date and service type columns to internal search results table|Story}
+Add {Include link with configuration details in estimate and post measure mode of My Window Treatments|Story}
+Add {Add window description field|Story}
+Add {Inform customers without an estimate that they will need to decide on category during measure appointment.|Story}
+Add {Customer can share an estimate |Story}
+Add {Add videos through out the experience to help explain process to customer|Story}
+Add {Allow vendor admins and CEC members to edit their own notes|Story}
+Add {Automatic Appointment Reminders to Installers|Story}
+Add {Lock Autobahn configuration when user tries to edit from THD cart|Story}
+Add {If Product is Backorders Post- Purchase  Customer is Notified and Offered Second Install|Story}
+Add {LDAP information feeds from THD|Story}
+Add {Installer Technician Can Add Job to Calendar|Story}
+Add {Update filtering removal on MWT|Story}
+Add {Show order in reverse chronological order on MWT page |Story}
+Add {CRM integration|Story}
+Add {Completed install job details non consistent between Customer Web and Vendor Web|Story}
+Add {ATB issue- PIP color swatch is not getting carried over to PCP in estimator mode|Story}
+Add {CEC can add specialty shape charge to a measure|Story}
+Add {Give warning message when min or max size changes measurement on PIP|Story}
+Add {Update spec pricing based on data feed|Story}
+Add {Label Whole Home measures appropriately|Story}
+Add {Install jobs that are waiting to be scheduled should not have reschedule link on My Orders|Story}
+Add {Indicate if a window has BOTH a flag and a window note|Story}
+Add {customer can easily print or email order details|Story}
+Add {Vendor Admin can easily print or email job details|Story}
+Add {Customer can see previously purchased products in My Window Treatments|Story}
+Add {Internal only view of all customers that have flagged windows or have not taken action on their measurements|Story}
+Add {Ability to merge accounts if customer starts new account for second address|Story}
+Add {App   Rename InstallVendor on phones' home screens|Story}
+Add {Uber like communication|Story}
+Add {Service Provider can assign jobs to a specific installer|Story}
+Add {Measure Flag - add reasons|Story}
+Add {Integrate MandI order look up into Ronaele|Story}
+Add {Installer can easily text customer when on the way|Story}
+Add {Customer can reply to confirmation email with notes|Story}
+Add {Install RTS notifications - additional info|Story}
+Add {Some kind of chat for support in the apps.|Story}
+Add {Autocomplete room name|Story}
+Add {Ship to Install Vendor Ships to Install Vendor or Store Based on Configuration|Story}
+Add {RTS Notifications - Printable view|Story}
+Add {Get items from Home Depot MyList  integration with MyList  |Story}
+Add {User can press button to add scheduled appointment to calendar|Story}
+Add {All service provider communication runs through app  includes communication log  |Story}
