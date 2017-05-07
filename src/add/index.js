@@ -1,25 +1,11 @@
-// alexa-cookbook sample code
-
-// There are three sections, Text Strings, Skill Code, and Helper Function(s).
-// You can copy and paste the entire file contents as the code for a new Lambda function,
-//  or copy & paste section #3, the helper function, to the bottom of your existing Lambda code.
-
-
-// 1. Text strings =====================================================================================================
-//    Modify these strings and messages to change the behavior of your Lambda function
-
-var myRequest = 'Florida';
-
-// 2. Skill Code =======================================================================================================
-
-
 var Alexa = require('alexa-sdk');
 
-exports.handler = function (event, context, callback) {
-  var alexa = Alexa.handler(event, context);
+//speech constants
+const ASK_FOR_STORY = 'What is the story?';
 
-  // alexa.appId = 'amzn1.echo-sdk-ams.app.1234';
-  // alexa.dynamoDBTableName = 'YourTableName'; // creates new table for session.attributes
+exports.handler = function (event, context, callback) {
+  console.log(JSON.stringify(event, null, 2));
+  var alexa = Alexa.handler(event, context);
 
   alexa.registerHandlers(handlers);
   alexa.execute();
@@ -28,42 +14,44 @@ exports.handler = function (event, context, callback) {
 var handlers = {
   'LaunchRequest': function () {
     console.log('launched backlog');
+    this.emit('Add');
   },
 
   'Add': function () {
     console.log('in add');
     var intentObj = this.event.request.intent;
-    var story = intentObj.slots.Story.value;
-    console.log('raw story: ' + story);
-    if (!story) {
-      story = '';
-    }
-    if (story.length > 0) {
-      story = story.substr(story.indexOf(" ") + 1).trim();
-      if (story.toUpperCase() === 'ADD') {
-        story = '';
-      }
-    }
-    console.log('normalized story: ' + story);
-    if (!story) {
-      console.log('no story so give help');
-      this.emit(':tell', 'I need a story.  Try saying ask backlog to add as a user I want to do something so that I can get something');
-
+    var story;
+    if (!intentObj || !intentObj.slots || !intentObj.slots.Story) {
+      console.log("Story is not in the slots");
     } else {
-      console.log('attempting to tell story');
-      this.emit(':tell', 'My story is really ' + story);
+      story = intentObj.slots.Story.value;
     }
-
-    /*
-    httpsGet(myRequest,  (myResult) => {
-            console.log("sent     : " + myRequest);
-            console.log("received : " + myResult);
-
-            this.emit(':tell', 'The population of ' + myRequest + ' is ' + myResult );
-
-        }
-    );
-    */
-
+    story = normalizeStory.call(this, story);
+    
+    if (!story) {
+      console.log('no story so ask for it');
+      this.emit(':ask', ASK_FOR_STORY, ASK_FOR_STORY);
+    } else {
+      console.log('Tell story');
+      this.emit(':tell', 'My story is ' + story);
+    }
   }
 };
+
+function normalizeStory(story) {
+  console.log('raw story: ' + story);
+  if (!story) {
+    story = '';
+  }
+  if (story.length > 0) {
+    //if the first word is add, chop it off
+    if (story.toUpperCase().startsWith('ADD ')) {
+      story = story.substr(story.indexOf(" ") + 1).trim();
+    }
+    if (story.toUpperCase() === 'ADD') {
+      story = '';
+    }
+  }
+  console.log('normalized story: ' + story);
+  return story;
+}
