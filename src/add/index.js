@@ -1,7 +1,10 @@
 var Alexa = require('alexa-sdk');
+var Pivotal = require('./pivotal');
 
 //speech constants
 const ASK_FOR_STORY = 'What is the story?';
+const STORY_ADDED = 'I added the story to the top of the icebox with label Alexa';
+const UNEXPECTED_ERROR = 'Something has gone wrong because my programmer does not know what he is doing';
 
 exports.handler = function (event, context, callback) {
   console.log(JSON.stringify(event, null, 2));
@@ -32,8 +35,14 @@ var handlers = {
       console.log('no story so ask for it');
       this.emit(':ask', ASK_FOR_STORY, ASK_FOR_STORY);
     } else {
-      console.log('Tell story');
-      this.emit(':tell', 'My story is ' + story);
+      console.log('Add story to backlog');
+      var pivotal = new Pivotal();
+      var self = this;
+      pivotal.addStory(story).then(function (storyResult) {
+        self.emit(':tell', STORY_ADDED);
+      }).catch(function (err) {
+        self.emit(UNEXPECTED_ERROR);
+      });
     }
   }
 };

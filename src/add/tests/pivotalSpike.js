@@ -1,4 +1,5 @@
 var Pivotal = require('../pivotal');
+var should = require('should');
 
 var assert = require('assert');
 describe('Pivotal', function () {
@@ -6,6 +7,16 @@ describe('Pivotal', function () {
     var pivotal = new Pivotal();
     pivotal.getProjects().then(function(projects) {
       assert(projects);
+      done();
+    }).catch(function(err) {
+      done(err);
+    });
+  });
+  it('should add story', function (done) {
+    var pivotal = new Pivotal();
+    var storyText = 'Demo story ' + new Date();
+    pivotal.addStory(storyText).then(function(story) {
+      story.name.should.be.equal(storyText);
       done();
     }).catch(function(err) {
       done(err);

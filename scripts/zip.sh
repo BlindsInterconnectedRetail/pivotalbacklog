@@ -1,4 +1,4 @@
 pushd src/add
 rm -f ../add.zip
-zip -rq ../add.zip index.js node_modules/*
+zip -rq ../add.zip *.js node_modules/*
 popd
