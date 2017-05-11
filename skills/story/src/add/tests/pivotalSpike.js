@@ -7,6 +7,9 @@ describe('Pivotal', function () {
     var pivotal = new Pivotal();
     pivotal.getProjects().then(function(projects) {
       assert(projects);
+      projects.forEach(function(project) {
+        console.log(project.name);
+      });
       done();
     }).catch(function(err) {
       done(err);

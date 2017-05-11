@@ -1,0 +1,73 @@
+Some zip codes for NY market failed to be able to schedule measure job
+Sanitize production data dump
+HIA and Customer Approval Pdf links are displayed in the Vendor Web But not on Customer web for Remakes
+Address in install appt reminder has duplicate line
+Calculate correct cost and retail in all markets for install 
+We are not calculating correct price for addition windows.
+We are not calculating correct Costs for additional windows and additional specs that has extra cost associated.
+NY Launch
+POC Firebase
+My Window Treatments Info Gets Associated to the Wrong Person
+Tablet M I Add to Cart is going to wrong cart
+t.blinds.homedepot.com PIP doesn't include MI call out
+Fix Duplicate Home Issue
+Realign Existing Accounts
+Require My Account Login to Schedule Install
+M  I Landing Page
+Marin Tracking Pixel 
+Motorized Spec Removal
+Revise Specialty Shapes UI  App  
+Show installers what install specs were purchased
+MI PIP
+PLP Redesign
+Allow internal user to correct specs
+Order summary for install jobs before pushing to cart
+Add original DC to order details screen
+Install and deployment of mobile app
+Track product only sales
+Duplicate property name for different address
+Above this line is prioritzed
+Rugs PLP
+Rugs Landing page
+Link to cancel install
+Revise calendar during the weekend
+Default options not selected
+Investigate way to measure how much data app is using 
+Vendor can vary business hours by day
+Turn hotjar off in lower lifecycles
+App user sync log
+Enable search via OMSID on M I PLPs
+Profile Experience
+Assign Jobs
+Test and target on PIP
+Revise vendor admin email notification to include customer name and W  number
+Figure out Omniture and tracking whole pipeline
+Allow customers to get lost password
+Use home services single- field address entry
+Cookies too large to enter M I
+Move to THD production for texting interface
+Installer can take and view one or more photos during a job
+During sync qued pictures get uploaded
+Installer can view all images for a window on the window details page
+Registered user can not re- login if he just registered  and do nothing   and reopened the browser
+Installer can take image when flagging a window
+Installer can view and delete full sized images taken during current job
+During an install or remake  installer can view previous images of current window
+Install vendor can view full size images in vendor admin
+Prioritized
+End to end testing in Prod
+Make sure promote to production and promote to beta of mobile app fail in team city if deployment fails for any reason
+Create escalation tree for critical issues  THD and GCC resources  
+Customer as an entity
+Tool for CEC to fix measurements submitted by installer  supervisor only    
+Timestamp shopping.customer when it is created  or show me where to get time stamp for creation  
+Unclear responsibilities for cloning Windows
+Convert to Elastic Search
+First time login is missing customer name or email in header area
+Customer can view photos in My Window Treatments
+Hide displayed zero when less than one inch of depth
+Installer can notate images
+Allow CEC to cart directly from estimate mode for DIY customer
+Simplified version of the estimate tool   Basic Estimator
+Presell products with Measure
+Tutorial Java script walk through for estimate tool

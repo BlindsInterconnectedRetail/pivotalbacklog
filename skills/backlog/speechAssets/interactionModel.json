@@ -1,0 +1,13 @@
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "Type",
+          "type": "ListType"
+        }
+      ],
+      "intent": "List"
+    }
+  ]
+}
