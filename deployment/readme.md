@@ -1,0 +1,4 @@
+Create an S3 bucket or pick an existing one to hold your code zips.
+Optional: Turn on versioning and retention (cleanup) policies on that bucket. Not required, but S3 offers them and they’re nice to have.
+Create the initial version of your Lambda function. Doesn’t even have to be real code yet, just make a placeholder so you can set the configuration (memory, duration, execution role) as you like.
+Create a “LambdaDeployment” function using the code below, and configure it to receive events from your S3 bucket. (Don’t forget to change YOUR_BUCKET_NAME, YOUR_CODE, and YOUR_FUNCTION_NAME to match your actual circumstances.)

@@ -1,6 +1,6 @@
 pushd skills/story/src/add
-rm -f ../../add.zip
-zip -rq ../../add.zip *.js node_modules/*
+rm -f ../../BacklogAdd.zip
+zip -rq ../../BacklogAdd.zip *.js node_modules/*
 popd
 pushd skills/debug/src/debug
 rm -f ../../debug.zip
